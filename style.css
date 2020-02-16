@@ -1,0 +1,427 @@
+/* @font-face{
+    font-family: "linearFont";
+    src:url(fonts/Linearicons-Free.eot),url(fonts/Linearicons-Free.svg),url(fonts/Linearicons-Free.ttf),url(fonts/Linearicons-Free.ttf),url(fonts/Linearicons-Free.woff),url(fonts/Linearicons-Free.woff2)
+} */
+:root {
+  --mainFont: "Cabin", sans-serif;
+  --gardianColors: linear-gradient(to right, #878fff, #cf95ff);
+}
+/* -------------------------------------------------------------------------- */
+/*                                General style                               */
+/* -------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.2rem;
+  font-family: var(--mainFont);
+}
+/* -------------------------------------------------------------------------- */
+/*                               Resuable style                               */
+/* -------------------------------------------------------------------------- */
+a {
+  text-decoration: none;
+  color: #000;
+}
+.row {
+  width: 90%;
+  margin: 0 auto;
+}
+.full-size{
+  width: 100%;
+  height: 100%;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Heading Style                               */
+/* -------------------------------------------------------------------------- */
+h1 {
+  font-size: 7rem;
+  font-weight: 300;
+  color: #fff;
+}
+h1 span {
+  display: block;
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 1rem;
+}
+h3 {
+  font-size: 4rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Buttons Style                               */
+/* -------------------------------------------------------------------------- */
+.white-btn {
+  background-color: #fff;
+  color: #000;
+  font-family: var(--mainFont);
+  padding: 10px 25px;
+  font-size: 1.6rem;
+}
+.gardian-btn {
+  background: var(--gardianColors);
+  color: #fff;
+  font-family: var(--mainFont);
+  padding: 10px 30px;
+  font-size: 1.6rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 Icons style                                */
+/* -------------------------------------------------------------------------- */
+.ti-user,
+.ti-rocket,
+.ti-infinite,
+.ti-headphone-alt,
+.ti-medall,
+.ti-thought{
+  margin-right: .7rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                            Header Section Start                            */
+/* -------------------------------------------------------------------------- */
+.header {
+  background-image: url(img/banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+.header-nav__list {
+  list-style: none;
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: space-evenly;
+}
+.header-nav__list-item--link {
+  color: #fff;
+}
+.header-hero {
+  display: flex;
+  padding: 7rem 0;
+  justify-content: space-between;
+}
+.header-hero__btn {
+  margin-top: 3rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                            feature section Start                           */
+/* -------------------------------------------------------------------------- */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0;
+}
+.feature-subheader {
+  font-size: 1.5rem;
+  color: #b1b1b1;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+.features-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.features-box {
+  background-color: #f9f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 20px #0000000f;
+  padding: 0 0 4rem 0;
+  flex: 0 1 23%;
+}
+.features-box__img {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 7rem 0px;
+  box-shadow: 2px 2px 3px #0000000f;
+}
+.features-box__btn {
+  margin-top: 3rem;
+}
+.features-box__img-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+.features-box__body {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
+  color: #4a4a4a73;
+}
+/* -------------------------------------------------------------------------- */
+/*                            Global section style                            */
+/* -------------------------------------------------------------------------- */
+.global {
+  display: flex;
+  flex-direction: row;
+}
+.global-img {
+  flex: 0 1 50%;
+}
+.global-img img {
+  width: 100%;
+  height: 100%;
+}
+.global-content {
+  flex: 0 1 50%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.global-content__mainheader span {
+  display: block;
+}
+.global-content__subheader {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+.global-content__body {
+  width: 75%;
+  font-size: 1.4rem;
+  color: #a5a5a5;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+.global-content__btn {
+  margin-top: 3rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                             video section style                            */
+/* -------------------------------------------------------------------------- */
+.video{
+  display: flex;
+  padding: 14rem 0;
+}
+.video-content{
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-container{
+  flex: 0 1 50%;
+}
+.video-content__hashtag{
+  color: #878fff;
+  margin-bottom: 3rem;
+  letter-spacing: 3px;
+}
+.video-content__mainheader{
+  font-size: 5rem;
+}
+.video-content__mainheader span{
+  display: block;
+}
+.video-content__subheader{
+  margin: 3rem 0;
+  font-size: 1.8rem;
+  font-weight: 900
+}
+.video-content__body{
+  color: #4a4a4a73;
+
+  font-size: 1.4rem;
+  color: #a5a5a5;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+.video-content__btn{
+  margin-top:1rem
+}
+/* -------------------------------------------------------------------------- */
+/*                        Extra Features section style                        */
+/* -------------------------------------------------------------------------- */
+.extrafeatures{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(img/feature-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 0;
+}
+.extrafeatures-mainheader{
+  color: #fff;
+}
+.extrafeatures-subheader{
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.extrafeatures-container{
+  display: flex;
+  width: 90%;
+  margin:0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.extrafeatures-container__box{
+  background-color: #fff;
+  flex: 0 1 30%;
+  margin-bottom: 3rem;
+      padding: 4rem;
+      border-radius: 10px;
+}
+.extrafeatures-container__box-header{
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.extrafeatures-container__box-body{
+  margin-top:1rem;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  color: #a5a5a5;
+}
+/* -------------------------------------------------------------------------- */
+/*                             brand secion Style                             */
+/* -------------------------------------------------------------------------- */
+.brands{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13rem 0;
+}
+.brand-item img{
+  filter: grayscale(100%);
+}
+/* -------------------------------------------------------------------------- */
+/*                             blog section style                             */
+/* -------------------------------------------------------------------------- */
+.blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 13rem;
+}
+.blog-subheader{
+  margin-top:1rem;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  color: #a5a5a5;
+}
+.blog-container{
+  margin-top: 6rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.blog-container__box{
+  flex: 0 1 49%;
+}
+.btn-holders{
+  margin-top: 3rem;
+  display: flex;
+}
+.blog-container__box-btn{
+  margin-right: 0.5rem;
+}
+.blog-cotainer__box-header{
+  margin-top: 2rem;
+  font-size: 2.3rem;
+}
+.blog-container__box-body,.blog-container__date{
+  margin-top:1rem;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  color: #a5a5a5;
+}
+/* -------------------------------------------------------------------------- */
+/*                            footer section style                            */
+/* -------------------------------------------------------------------------- */
+footer{
+  color: #fff;
+  background-image: url(img/footer-bg.jpg);
+  padding:7rem 0;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav__header,.footer-gallery__header,.footer-newseletter__header{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.footer-nav__list{
+  list-style: none;
+}
+.footer-nav__list-item{
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+.footer-nav__list-item--link{
+  color: #fff;
+}
+.footer-nav{
+  flex:0 1 30%
+}
+.footer-newseletter{
+flex:  0 1 50%;
+}
+.footer-newseletter__form{
+  display: flex;
+  align-items: center;
+ margin-top: 3rem;
+}
+.footer-newseletter__form-btn{
+  margin-left: 3rem;
+  border-radius: 10px;
+}
+.footer-newseletter__form input{
+  border-radius: 50px;
+  border: none;
+  padding: 15px 16px;
+  flex: 0 1 60%;
+}
+.footer-newseletter__form input::placeholder{
+  color: #a5a5a5;
+}
+.footer-newseletter__form-btn a{
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.footer-gallery{
+  display: flex;
+  flex-direction: column;
+}
+.footer-gallery{
+  flex: 0 1 20%;
+}
+.footer-gallery__container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-gallery__container-item{
+  flex:0 1 15%
+}
